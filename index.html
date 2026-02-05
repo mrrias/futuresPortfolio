@@ -3,64 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Futures Portfolio</title>
+    <title>Alby Long — Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <!-- HEADER -->
-    <div class="header">
-      <h1 class="name">Portfolio</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-      </nav>
-    </div>
-
-    <!-- CONTENT -->
-    <div class="content">
-      <!-- INTRO -->
-      <div class="content-main">
-        <h1>Alby Long</h1>
+    <header class="header">
+      <div class="header-inner">
+        <span class="name">Alby Long</span>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+        </nav>
       </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+      <!-- HERO -->
+      <section class="hero">
+        <h1>Hey, I’m <span>Alby</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          nostrum culpa asperiores quis commodi.
+        </p>
+      </section>
+
+      <!-- TIP -->
+      <section class="card" id="about">
+        <h2>Tips</h2>
+        <p>
+          <strong>Hey there,</strong> here is a great tip!<br />
+          If you see <strong>{/}</strong> anywhere you can click it to open a
+          link to find out more.
+        </p>
+      </section>
 
       <!-- ABOUT -->
-      <div class="content-sections" id="about">
-        <h1>About</h1>
+      <section class="card" id="about">
+        <h2>About</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolore
-          excepturi hic, mollitia non blanditiis tenetur dignissimos animi
-          aliquid quae accusantium velit, eius ducimus pariatur a earum?
-          Blanditiis, ex dolor!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+          aspernatur dolor facere aut deserunt deleniti totam distinctio,
+          mollitia ducimus eligendi quis beatae ipsa explicabo provident
+          pariatur perspiciatis, odit dicta ipsam?
         </p>
-      </div>
+      </section>
 
       <!-- EDUCATION -->
-      <div class="content-sections" id="education">
-        <h1>Education</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-          repudiandae ab sapiente consequatur! Quos cupiditate sunt sequi, nemo
-          architecto earum eveniet quisquam eius dolore consequuntur sit magni
-          libero eum facere!
-        </p>
-      </div>
+      <section class="card" id="education">
+        <h2>Education</h2>
+        <ul class="card-dots">
+          <li>
+            <h3>The Friends School Hobart</h3>
+            <p>2025 - Current</p>
+          </li>
+          <li>
+            <h3>Mackillop Catholic College</h3>
+            <p>2022 - 2024</p>
+          </li>
+          <li>
+            <h3>Lauderdale Primary School</h3>
+            <p>2015 - 2022</p>
+          </li>
+        </ul>
+      </section>
 
       <!-- PROJECTS -->
-      <div class="content-sections" id="projects">
-        <h1>Projects</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero eius
-          excepturi non ea optio ipsum earum aperiam sit voluptatum, nisi aut
-          deserunt praesentium, sapiente rem illo in ipsam, iusto aspernatur?
-        </p>
-      </div>
-    </div>
+      <section class="card" id="projects">
+        <h2>Projects</h2>
+        <ul class="card-dots">
+          <li>
+            <h3>
+              <a href="https://mrrias.github.io/portfolioSite/" target="_blank"
+                >{/}</a
+              >
+              Portfolio Website
+            </h3>
+            <p>
+              A programming portfolio site I made to showcase my programming
+              projects and a bit about me as a programmer.
+            </p>
+          </li>
+          <li>
+            <h3>
+              <a href="https://mrrias.github.io/ShiroDocs/" target="_blank"
+                >{/}</a
+              >
+              Discord Bot
+            </h3>
+            <p>
+              I have also made a custom Discord bot that is rich in features and
+              made to a professional standard.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <!-- FOOTER -->
-    <div class="footer"></div>
+    <footer class="footer">
+      <p>Alby Long Friends School Hobart</p>
+    </footer>
 
-    <!-- JAVASCRIPT -->
     <script src="scripts.js"></script>
   </body>
 </html>
