@@ -1,18 +1,19 @@
 :root {
-  --bg: #f9fafb;
+  --bg: #fafafa;
   --card: #ffffff;
-  --fg: #1f2933;
+  --fg: #0f172a;
   --muted: #6b7280;
-  --accent: #2563eb;
+  --accent: #ec4899;
   --border: #e5e7eb;
 }
 
 body.dark-mode {
-  --bg: #0f1419;
-  --card: #1a1f2e;
-  --fg: #e4e4e7;
-  --muted: #a1a1aa;
-  --border: #27272a;
+  --bg: #0e1117;
+  --card: #161b22;
+  --fg: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #f472b6;
+  --border: #1f2937;
 }
 
 * {
@@ -35,7 +36,6 @@ body {
     color 0.3s ease;
 }
 
-/* HEADER */
 .header {
   position: sticky;
   top: 0;
@@ -60,6 +60,7 @@ nav {
 nav a {
   color: var(--muted);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 nav a:hover {
@@ -67,17 +68,14 @@ nav a:hover {
 }
 
 .theme-toggle {
+  padding-top: 3.5px;
   background: none;
   border: none;
   cursor: pointer;
   font-size: 1.2rem;
+  color: var(--fg);
 }
 
-body.dark-mode .theme-toggle {
-  color: #e4e4e7;
-}
-
-/* CONTENT */
 .content {
   max-width: 960px;
   margin: auto;
@@ -104,11 +102,10 @@ body.dark-mode .theme-toggle {
   color: var(--muted);
 }
 
-/* CARDS */
 .card {
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 2rem;
   margin-bottom: 2rem;
 }
@@ -117,7 +114,6 @@ body.dark-mode .theme-toggle {
   margin-top: 0;
 }
 
-/* LIST */
 .list {
   list-style: none;
   padding: 0;
@@ -138,7 +134,7 @@ body.dark-mode .theme-toggle {
 
 .list a {
   font-weight: 500;
-  color: var(--accent);
+  color: var(--fg);
   text-decoration: none;
 }
 
@@ -147,7 +143,6 @@ body.dark-mode .theme-toggle {
   font-size: 0.9rem;
 }
 
-/* FOOTER */
 .footer {
   text-align: center;
   padding: 2rem;
