@@ -39,6 +39,7 @@ body {
 .header {
   position: sticky;
   top: 0;
+  z-index: 1000;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
 }
@@ -111,6 +112,8 @@ nav a:hover {
   border-radius: 14px;
   padding: 2rem;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .card h2 {
